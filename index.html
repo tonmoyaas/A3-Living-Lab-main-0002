@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- font awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -18,13 +20,25 @@
         font-family: "Sora", serif;
     }
 </style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'color-primary': '#179800',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="font-sora">
     <!-- Header section -->
-    <header>
+    <header class="bg-gradient-to-b from-white to-[#EFEBE3] border-b-2 border-[#179800] lg:border-none">
         <!-- navbar -->
-        <nav>
-            <div class="navbar bg-base-100">
+        <nav class="px-0 lg:px-32">
+            <div class="navbar">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -41,15 +55,20 @@
                           d="M4 6h16M4 12h8m-8 6h16" />
                       </svg>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <div tabindex="0"
+                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <ul>
                       <li><a>Product</a></li>
                       <li><a>Services</a></li>
                       <li><a>Contact us</a></li>
                     </ul>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <img class="" src="c2-assets/shopping cart.png" alt="">
+                  <a class="">Login</a>
+                  <a class="">Register</a>
+                    </div>
                   </div>
-                  <img class="btn btn-ghost text-xl" src="c2-assets/logo-header.png" alt="">
+                  <img class="hidden lg:flex" src="c2-assets/logo-header.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -58,12 +77,13 @@
                     <li><a>Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                    <i class="fa-solid fa-magnifying-glass btn-ghost"></i>
-                    <img class="btn-ghost" src="c2-assets/shopping cart.png" alt="">
+                <div class="navbar-end hidden lg:flex gap-4">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <img class="" src="c2-assets/shopping cart.png" alt="">
                   <a class="btn btn-outline btn-success">Login</a>
-                  <a class="btn btn-success">Register</a>
+                  <a class="btn btn-success bg-color-primary text-white">Register</a>
                 </div>
+                <img class="lg:hidden" src="c2-assets/logo.png" alt="">
               </div>
         </nav>
     </header>
