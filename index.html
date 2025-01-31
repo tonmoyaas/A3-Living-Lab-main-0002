@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature's Platter</title>
-    <!-- Google font CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <!-- font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature's Platter</title>
+  <!-- Google font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
     .font-sora {
-        font-family: "Sora", serif;
+      font-family: "Sora", serif;
     }
-</style>
-<script>
+  </style>
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -33,107 +36,135 @@
     }
   </script>
 </head>
+
 <body class="font-sora">
-    <!-- Header section -->
-    <header class="bg-gradient-to-b from-white to-[#EFEBE3] mb-36">
-        <!-- navbar -->
-        <nav class="px-0 lg:px-32 border-b-2 border-[#179800] lg:border-none">
-            <div class="navbar flex justify-between">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <div tabindex="0"
-                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <ul>
-                      <li><a>Product</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Contact us</a></li>
-                    </ul>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <img class="" src="c2-assets/shopping cart.png" alt="">
-                  <a class="">Login</a>
-                  <a class="">Register</a>
-                    </div>
-                  </div>
-                  <img class="hidden lg:flex" src="c2-assets/logo-header.png" alt="">
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Product</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Contact us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end hidden lg:flex gap-4">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <img class="" src="c2-assets/shopping cart.png" alt="">
-                  <a class="btn btn-outline btn-success">Login</a>
-                  <a class="btn btn-success bg-color-primary text-white">Register</a>
-                </div>
-                <img class="lg:hidden" src="c2-assets/logo.png" alt="">
-              </div>
-        </nav>
-       <section class="px-0 lg:px-32 mt-10 md:mt-20 mx-auto">
-        <!-- banner text -->
-         <div class="text-center mb-9">
-            <h1 class="text-5xl font-semibold">Freshness <span class="text-color-primary">You Can <br>
-                Count</span> On, Prices You’ll Love!</h1>
-                <p class="mt-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
-         </div>
-         <!-- image -->
-          <!-- <div class="flex justify-center">
-            <img src="c2-assets/hero-vegetables.png" alt="">
-          </div> -->
-         <!-- slider carousel -->
-         <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img
-                src="c2-assets/hero-vegetables.png"
-                class="w-[350px] mx-auto lg:w-[800px]" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
+  <!-- Header section -->
+  <header class="bg-gradient-to-b from-white to-[#EFEBE3] mb-12 md:mb-36">
+    <!-- navbar -->
+    <nav class="px-0 lg:px-32 border-b-2 border-[#179800] lg:border-none">
+      <div class="navbar flex justify-between">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-              <img
-                src="c2-assets/vegetables-1.png"
-                class="w-[350px] mx-auto lg:w-[800px]" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide1" class="btn btn-circle">❮</a>
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-              <img
-                src="c2-assets/vegetable-2.png"
-                class="w-[350px] mx-auto lg:w-[800px]" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide2" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+            <div tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <ul>
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <img class="" src="c2-assets/shopping cart.png" alt="">
+              <a class="">Login</a>
+              <a class="">Register</a>
             </div>
           </div>
-       </section>
-    </header>
+          <img class="hidden lg:flex" src="c2-assets/logo-header.png" alt="">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden lg:flex gap-4">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <img class="" src="c2-assets/shopping cart.png" alt="">
+          <a class="btn btn-outline btn-success">Login</a>
+          <a class="btn btn-success bg-color-primary text-white">Register</a>
+        </div>
+        <img class="lg:hidden" src="c2-assets/logo.png" alt="">
+      </div>
+    </nav>
+    <section class="px-0 lg:px-32 mt-10 md:mt-20 mx-auto">
+      <!-- banner text -->
+      <div class="text-center mb-9">
+        <h1 class="text-5xl font-semibold">Freshness <span class="text-color-primary">You Can <br>
+            Count</span> On, Prices You’ll Love!</h1>
+        <p class="mt-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples,
+          we’ve got you covered every day!</p>
+      </div>
+      <!-- image -->
+      <!-- <div class="flex justify-center">
+            <img src="c2-assets/hero-vegetables.png" alt="">
+          </div> -->
+      <!-- slider carousel -->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="c2-assets/hero-vegetables.png" class="w-[350px] mx-auto lg:w-[800px]" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="c2-assets/vegetables-1.png" class="w-[350px] mx-auto lg:w-[800px]" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="c2-assets/vegetable-2.png" class="w-[350px] mx-auto lg:w-[800px]" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
 
-    <!-- main section -->
-    <main></main>
+  <!-- main section -->
+  <main>
+    <!-- Services section -->
+    <section class="px-4 md:px-32 mb-12 md:mb-32 mx-auto">
+      <h3 class="text-color-primary text-4xl font-semibold mb-12">Services</h3>
+      <!-- cards -->
+      <div class="flex flex-col lg:flex-row lg:justify-around gap-6">
+        <!-- first card -->
+        <div class="card bg-[#EFEBE3] lg:w-96 mx-auto shadow-md">
+          <figure class="px-10 pt-10">
+            <img src="c2-assets/service.png" alt="Services" class="bg-white rounded-full p-[25px]" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">24/7 Services </h2>
+            <p>It's all at your earliest convenience – the service you need. Having trouble in your daily life</p>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="card bg-[#EFEBE3] lg:w-96 mx-auto shadow-md">
+          <figure class="px-10 pt-10">
+            <img src="c2-assets/delivery.png" alt="Services" class="bg-white rounded-full p-[25px]" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Fast Delivery</h2>
+            <p>We have skilled deliverymen who complete the delivery across Dhaka city at the fastest time. · Order
+              Tracking.</p>
+          </div>
+        </div>
+        <!-- third card -->
+        <div class="card bg-[#EFEBE3] lg:w-96 mx-auto shadow-md">
+          <figure class="px-10 pt-10">
+            <img src="c2-assets/healthy.png" alt="Services" class="bg-white rounded-full p-[25px]" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Healthy Products</h2>
+            <p>Dark green vegetables. Eat dark green vegetables at least three to four times a week. ...</p>
+          </div>
+        </div>
+      </div>
 
-    <!-- footer section -->
-    <footer></footer>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer></footer>
 </body>
+
 </html>
