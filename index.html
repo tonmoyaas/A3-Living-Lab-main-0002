@@ -42,25 +42,24 @@
   <header class="bg-gradient-to-b from-white to-[#EFEBE3] mb-12 md:mb-36">
     <!-- navbar -->
     <nav class="px-0 lg:px-32 border-b-2 border-[#179800] lg:border-none">
-      <div class="navbar flex justify-between">
+      <div class="navbar flex justify-between flex-row-reverse md:flex-row">
         <div class="navbar-start">
-          <div class="dropdown">
+          <div class="dropdown flex justify-end right-0 z-10 mt-2 w-56">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="green">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
+              <!-- right-0 z-10 mt-2 w-56 -->
             </div>
             <div tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <ul>
                 <li><a>Product</a></li>
                 <li><a>Services</a></li>
                 <li><a>Contact us</a></li>
+                <li><a>Login</a></li>
+                <li><a>Register</a></li>
               </ul>
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <img class="" src="c2-assets/shopping cart.png" alt="">
-              <a class="">Login</a>
-              <a class="">Register</a>
             </div>
           </div>
           <img class="hidden lg:flex" src="c2-assets/logo-header.png" alt="">
@@ -128,7 +127,7 @@
       <!-- cards -->
       <div class="flex flex-col lg:flex-row lg:justify-around gap-6 lg:gap-6">
         <!-- first card -->
-        <div class="card bg-[#EFEBE3] lg:w-auto mx-auto shadow-md">
+        <div class="card bg-[#EFEBE3] lg:w-[424px] mx-auto shadow-md">
           <figure class="px-10 pt-10">
             <img src="c2-assets/service.png" alt="Services" class="bg-white rounded-full p-[25px]" />
           </figure>
@@ -138,7 +137,7 @@
           </div>
         </div>
         <!-- second card -->
-        <div class="card bg-[#EFEBE3] lg:w-auto mx-auto shadow-md">
+        <div class="card bg-[#EFEBE3] lg:w-[424px] mx-auto shadow-md">
           <figure class="px-10 pt-10">
             <img src="c2-assets/delivery.png" alt="Services" class="bg-white rounded-full p-[25px]" />
           </figure>
@@ -149,7 +148,7 @@
           </div>
         </div>
         <!-- third card -->
-        <div class="card bg-[#EFEBE3] lg:w-auto mx-auto shadow-md">
+        <div class="card bg-[#EFEBE3] lg:w-[424px] mx-auto shadow-md">
           <figure class="px-10 pt-10">
             <img src="c2-assets/healthy.png" alt="Services" class="bg-white rounded-full p-[25px]" />
           </figure>
